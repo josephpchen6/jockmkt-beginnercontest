@@ -2,7 +2,7 @@
 
 Quick script to find the largest pre/post IPO increases in value in Jock MKT's beginner contests.
 
-In beginner contests, Jock MKT tends to increase players' value players post-IPO. So by buying the players with the largest increase in value pre IPO, and then subsequently selling them, you can get ~150 free coins, which is enough to at least place in certain contests. Or you could use this coin "bonus: to actually purchase player stocks.
+In beginner contests, Jock MKT tends to increase players' value players post-IPO. So by buying the players with the largest increase in value pre IPO, and then subsequently selling them, you can get ~150 free coins, which is enough to at least place in certain contests. Or you could use this coin "bonus" to actually purchase player stocks.
 
 Usage:
 1) Delete readme.txt in jock_mkt_data
