@@ -1,2 +1,1 @@
-DELETE THIS FILE BEFORE USING
-Downloaded files go here
+(Downloaded files go in this folder)

@@ -7,7 +7,7 @@ for file in os.listdir("jock_mkt_data"):
     df = pd.concat([df, pd.read_csv(f"jock_mkt_data/{file}", engine = 'python')])
 
 df["LAST_PRICE"] = df["LAST_PRICE"] + 0.01
-max_shares = 125 / df["LAST_PRICE"].astype(int) #Contest: 500, Free: 125
+max_shares = 125 // df["LAST_PRICE"].astype(float) #Contest: 500, Free: 125
 
 df = pd.concat([df["NAME"], (df["SUGGESTED_PRICE"] - 1.02 * df["LAST_PRICE"]) / df["LAST_PRICE"], 
     ((0.98 * df["SUGGESTED_PRICE"] - .2) - 1.02 * df["LAST_PRICE"]) / (1.02 * df["LAST_PRICE"]),
@@ -28,4 +28,5 @@ Not really sure if this is the case with the NBA
 df = df.sort_values(by=["Total Profit"], ascending = False)
 
 print(df.head(10))
+# print(df.to_string())
 #Change head value if viewing more players is desired
